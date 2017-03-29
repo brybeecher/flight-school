@@ -5,6 +5,7 @@ require_relative "radar"
 
 class FlightSchool < Sinatra::Base
   get "/" do
+    groan
     erb :index, locals: { airports: ["JFK", "SFO", "OHR", "FWA", "OAK", "SEA", "LAX"] }
   end
 
